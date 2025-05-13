@@ -1,0 +1,15 @@
+@use "reset";
+
+@layer components,  base;
+
+@layer base {
+  body {
+    color: red;
+  }
+}
+
+@layer components {
+  body {
+    color: blue;
+  }
+}
