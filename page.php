@@ -26,9 +26,6 @@ $title = get_the_title();
             </div>
         </section>
 
-
-
-
     </div>
 
 

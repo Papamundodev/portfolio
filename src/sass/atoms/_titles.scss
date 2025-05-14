@@ -1,0 +1,21 @@
+@use "../design-tokens" as *;
+
+/********* Titles *********/
+
+@mixin text-heading-1 {
+  font-family: $heading-font;
+  font-size: $font-size-bg;
+  line-height: $line-height-bg;
+  font-weight: $font-weight-700;
+  letter-spacing: $letter-spacing-sm;
+  text-wrap: balance;
+}
+
+@mixin text-heading-2 {
+  font-family: $heading-font;
+  font-size: $font-size-xl;
+  line-height: $line-height-bg;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-sm;
+  text-wrap: balance;
+}

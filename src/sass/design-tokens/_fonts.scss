@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-display: swap;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("../../fonts/EBGaramond-VariableFont_wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-display: swap;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-display: swap;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
+/********* Fonts *********/
+
+/* font family */
+
+$text-font: "EB Garamond", system-ui, -apple-system, "Segoe UI", sans-serif;
+$heading-font: "Oswald", system-ui, -apple-system, "Segoe UI", sans-serif;
+$nav-font: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+$fonts: (
+  "text": $text-font,
+  "heading": $heading-font,
+  "nav": $nav-font,
+);
+
+@each $key, $value in $fonts {
+  .#{$key}-font {
+    font-family: $value;
+  }
+}
+
+/* font size */
+$font-size-xs: clamp(0.625rem, 0.5875rem + 0.1875vi, 0.8125rem);
+$font-size-sm: clamp(0.8125rem, 0.7625rem + 0.25vi, 1rem);
+$font-size-default: clamp(1rem, 0.95rem + 0.3125vi, 1.25rem);
+$font-size-md: clamp(1.5625rem, 1.4844rem + 0.3906vi, 1.9531rem);
+$font-size-lg: clamp(1.9531rem, 1.8555rem + 0.4883vi, 2.4414rem);
+$font-size-xl: clamp(2.4414rem, 2.3193rem + 0.6104vi, 3.0518rem);
+$font-size-xxl: clamp(3.0518rem, 2.8992rem + 0.7629vi, 3.8147rem);
+$font-size-bg: clamp(4.7684rem, 4.53rem + 1.1921vi, 5.9605rem);
+
+$font-sizes: (
+  "xs": $font-size-xs,
+  "sm": $font-size-sm,
+  "default": $font-size-default,
+  "md": $font-size-md,
+  "lg": $font-size-lg,
+  "xl": $font-size-xl,
+  "xxl": $font-size-xxl,
+  "big": $font-size-bg,
+);
+
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+
+/* ------- Font Weight Test ------- */
+$font-weight-100: 100;
+$font-weight-200: 200;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-800: 800;
+$font-weight-900: 900;
+
+$font-weights: (
+  "100": $font-weight-100,
+  "200": $font-weight-200,
+  "300": $font-weight-300,
+  "400": $font-weight-400,
+  "500": $font-weight-500,
+  "600": $font-weight-600,
+  "700": $font-weight-700,
+  "800": $font-weight-800,
+  "900": $font-weight-900,
+);
+
+@each $key, $value in $font-weights {
+  .fw-#{$key} {
+    font-weight: $value;
+  }
+}
+
+/* line height */
+$line-height-sm: 1.1;
+$line-height-normal: 1.6;
+$line-height-bg: 2;
+
+/* letter spacing */
+$letter-spacing-sm: 0.02em;
+$letter-spacing-normal: 0.04em;
+$letter-spacing-bg: 0.06em;

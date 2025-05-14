@@ -1,15 +1,17 @@
+/* Import the modules first */
+@use "layout-config";
 @use "reset";
+@use "atoms" as *;
 
-@layer components,  base;
-
-@layer base {
-  body {
-    color: red;
+body {
+  h1 {
+    @include text-heading-1;
   }
-}
-
-@layer components {
-  body {
-    color: blue;
+  h2 {
+    @include text-heading-2;
   }
+  p {
+    @include text-paragraph-1;
+  }
+  margin: 0;
 }

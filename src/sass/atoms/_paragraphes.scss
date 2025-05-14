@@ -1,0 +1,12 @@
+@use "../design-tokens" as *;
+
+/********* Text *********/
+
+@mixin text-paragraph-1 {
+  font-family: $text-font;
+  font-size: $font-size-default;
+  line-height: $line-height-normal;
+  font-weight: $font-weight-400;
+  letter-spacing: $letter-spacing-sm;
+  text-wrap: pretty;
+}
