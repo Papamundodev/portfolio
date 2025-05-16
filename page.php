@@ -109,19 +109,6 @@ $title = get_the_title();
                 </div>
                 <div class="flex-auto">
                     <div>
-                        <div class="bg-background-color element-ratio-calculating">
-                            <div class="">
-                                <p class="">background-color</p>
-                                <div class="bg-color-computed"></div>
-                            </div>
-                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
-                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
-                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p> 
-                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
-                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
-                        </div>
-                    </div>
-                    <div>
                         <div class="bg-primary-color-surface-1 element-ratio-calculating">
                             <div class="">
                                 <p class="">primary-color-surface-1</p>
@@ -160,10 +147,25 @@ $title = get_the_title();
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
+
+
                     <div>
-                        <div class="bg-primary-color-surface-4 element-ratio-calculating">
+                        <div class="bg-secondary-color-surface-1 element-ratio-calculating">
                             <div class="">
-                                <p class="">primary-color-surface-4</p>
+                                <p class="">secondary-color-surface-1</p>
+                                <div class="bg-color-computed"></div>
+                            </div>  
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-secondary-color-surface-2 element-ratio-calculating">
+                            <div class="">
+                                <p class="">secondary-color-surface-2</p>
                                 <div class="bg-color-computed"></div>
                             </div>
                             <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
@@ -174,9 +176,9 @@ $title = get_the_title();
                         </div>
                     </div>
                     <div>
-                        <div class="bg-primary-color-surface-5 element-ratio-calculating">
+                        <div class="bg-secondary-color-surface-3 element-ratio-calculating">
                             <div class="">
-                                <p class="">primary-color-surface-5</p>
+                                <p class="">secondary-color-surface-3</p>
                                 <div class="bg-color-computed"></div>
                             </div>
                             <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
@@ -186,9 +188,52 @@ $title = get_the_title();
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
+
+
+                    <div>
+                        <div class="bg-tertiary-color-surface-1 element-ratio-calculating">
+                            <div class="">
+                                <p class="">tertiary-color-surface-1</p>
+                                <div class="bg-color-computed"></div>
+                            </div>  
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-tertiary-color-surface-2 element-ratio-calculating">
+                            <div class="">
+                                <p class="">tertiary-color-surface-2</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-tertiary-color-surface-3 element-ratio-calculating">
+                            <div class="">
+                                <p class="">tertiary-color-surface-3</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
+
     </main>
 
 <?php

@@ -15,9 +15,12 @@ body {
   p {
     @include text-paragraph-1;
   }
-  ul {
+  ul,
+  ol {
     @include list;
   }
+  background-color: $background-color;
+  color: $default-color;
 }
 
 /* ------- Table component ------- */

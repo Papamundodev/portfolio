@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("tld-theme-toggle");
+  themeToggle.addEventListener("click", () => {
+    updateContrastRatio();
+  });
   updateContrastRatio();
 });
 function updateContrastRatio() {

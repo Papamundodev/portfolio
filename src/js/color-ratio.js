@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Theme light/dark toggle event listener to update the contrast ratio
+  const themeToggle = document.getElementById("tld-theme-toggle");
+  themeToggle.addEventListener("click", () => {
+    updateContrastRatio();
+  });
   // Initial contrast calculation // keep only in development
   updateContrastRatio();
   //end of the page

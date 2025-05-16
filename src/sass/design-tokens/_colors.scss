@@ -10,7 +10,7 @@
   --gray-color: #afbdbf;
 
   /* primary colors */
-  --primary-color: #5c1da0; // svg background
+  --primary-color: #300a58; // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -25,16 +25,6 @@
     in srgb,
     var(--background-color),
     var(--primary-color) 15%
-  );
-  --primary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--primary-color) 5%
-  );
-  --primary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--primary-color) 10%
   );
 
   /* secondary colors */
@@ -54,19 +44,9 @@
     var(--background-color),
     var(--secondary-color) 15%
   );
-  --secondary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--secondary-color) 5%
-  );
-  --secondary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--secondary-color) 10%
-  );
 
   /* tertiary colors */
-  --tertiary-color: #ff6dc5; // svg background
+  --tertiary-color: #5c0c3c; // svg background
   --tertiary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -81,16 +61,6 @@
     in srgb,
     var(--background-color),
     var(--tertiary-color) 15%
-  );
-  --tertiary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--tertiary-color) 5%
-  );
-  --tertiary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--tertiary-color) 10%
   );
 
   /*action colors*/
@@ -115,7 +85,7 @@
   --gray-color: #3b4142;
 
   /* primary colors */
-  --primary-color: #5c1da0; // svg background
+  --primary-color: #c088fa; // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -131,19 +101,9 @@
     var(--background-color),
     var(--primary-color) 15%
   );
-  --primary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--primary-color) 5%
-  );
-  --primary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--primary-color) 10%
-  );
 
   /* secondary colors */
-  --secondary-color: #121554; // svg background
+  --secondary-color: #a1a5ff; // svg background
   --secondary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -159,19 +119,9 @@
     var(--background-color),
     var(--secondary-color) 15%
   );
-  --secondary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--secondary-color) 5%
-  );
-  --secondary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--secondary-color) 10%
-  );
 
   /* tertiary colors */
-  --tertiary-color: #ff6dc5; // svg background
+  --tertiary-color: #fb92d1; // svg background
   --tertiary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -186,16 +136,6 @@
     in srgb,
     var(--background-color),
     var(--tertiary-color) 15%
-  );
-  --tertiary-color-surface-4: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--tertiary-color) 5%
-  );
-  --tertiary-color-surface-5: color-mix(
-    in srgb,
-    var(--gray-color),
-    var(--tertiary-color) 10%
   );
 
   /*action colors*/
@@ -222,20 +162,14 @@ $primary-color: var(--primary-color);
 $primary-color-surface-1: var(--primary-color-surface-1);
 $primary-color-surface-2: var(--primary-color-surface-2);
 $primary-color-surface-3: var(--primary-color-surface-3);
-$primary-color-surface-4: var(--primary-color-surface-4);
-$primary-color-surface-5: var(--primary-color-surface-5);
 $secondary-color: var(--secondary-color);
 $secondary-color-surface-1: var(--secondary-color-surface-1);
 $secondary-color-surface-2: var(--secondary-color-surface-2);
 $secondary-color-surface-3: var(--secondary-color-surface-3);
-$secondary-color-surface-4: var(--secondary-color-surface-4);
-$secondary-color-surface-5: var(--secondary-color-surface-5);
 $tertiary-color: var(--tertiary-color);
 $tertiary-color-surface-1: var(--tertiary-color-surface-1);
 $tertiary-color-surface-2: var(--tertiary-color-surface-2);
 $tertiary-color-surface-3: var(--tertiary-color-surface-3);
-$tertiary-color-surface-4: var(--tertiary-color-surface-4);
-$tertiary-color-surface-5: var(--tertiary-color-surface-5);
 $gray-color: var(--gray-color);
 $link-color: var(--link-color);
 $link-hover-color: var(--link-hover-color);
@@ -251,20 +185,14 @@ $colors: (
   "primary-color-surface-1": $primary-color-surface-1,
   "primary-color-surface-2": $primary-color-surface-2,
   "primary-color-surface-3": $primary-color-surface-3,
-  "primary-color-surface-4": $primary-color-surface-4,
-  "primary-color-surface-5": $primary-color-surface-5,
   "secondary-color": $secondary-color,
   "secondary-color-surface-1": $secondary-color-surface-1,
   "secondary-color-surface-2": $secondary-color-surface-2,
   "secondary-color-surface-3": $secondary-color-surface-3,
-  "secondary-color-surface-4": $secondary-color-surface-4,
-  "secondary-color-surface-5": $secondary-color-surface-5,
   "tertiary-color": $tertiary-color,
   "tertiary-color-surface-1": $tertiary-color-surface-1,
   "tertiary-color-surface-2": $tertiary-color-surface-2,
   "tertiary-color-surface-3": $tertiary-color-surface-3,
-  "tertiary-color-surface-4": $tertiary-color-surface-4,
-  "tertiary-color-surface-5": $tertiary-color-surface-5,
   "gray-color": $gray-color,
   "link-color": $link-color,
   "link-hover-color": $link-hover-color,
