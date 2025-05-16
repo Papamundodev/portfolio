@@ -1,0 +1,23 @@
+@use "container-wrapper" as *;
+
+/* ------- Flex center ------- */
+@mixin flex-center($gap: $spacer-md) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+.flex-center {
+  @include flex-center;
+}
+
+@mixin flex-column-center($gap: $spacer-md) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+.flex-column-center {
+  @include flex-column-center;
+}

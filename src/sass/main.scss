@@ -2,7 +2,9 @@
 @use "layout-config";
 @use "reset";
 @use "atoms" as *;
+@use "molecules" as *;
 @use "utilities" as *;
+@use "design-tokens" as *;
 body {
   h1 {
     @include text-heading-1;
@@ -15,5 +17,19 @@ body {
   }
   ul {
     @include list;
+  }
+}
+
+/* ------- Table component ------- */
+
+.table-component {
+  .grid-table {
+    @include grid-table-2-columns;
+  }
+}
+
+.background-color-system {
+  @include grid-col-3 {
+    @include card_column_center;
   }
 }

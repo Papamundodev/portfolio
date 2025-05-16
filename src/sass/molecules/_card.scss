@@ -1,0 +1,9 @@
+@use "../utilities" as *;
+
+@mixin card_column_center {
+  & > * {
+    @include flex-column-center;
+    margin-inline: auto;
+    padding: $spacer-md;
+  }
+}
