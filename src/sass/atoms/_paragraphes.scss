@@ -1,12 +1,26 @@
 @use "../design-tokens" as *;
-
+@use "../utilities" as *;
 /********* Text *********/
 
 @mixin text-paragraph-1 {
   font-family: $text-font;
   font-size: $font-size-default;
-  line-height: $line-height-normal;
+  line-height: $line-height-paragraph;
   font-weight: $font-weight-400;
-  letter-spacing: $letter-spacing-sm;
+  letter-spacing: $letter-spacing-paragraph;
   text-wrap: pretty;
+}
+
+@mixin list {
+  & {
+    padding-inline: $spacer-sm;
+    padding-block: $spacer-xl;
+    li {
+      margin-bottom: $spacer-md;
+      margin-inline-start: $spacer-lg;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

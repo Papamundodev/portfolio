@@ -2,7 +2,7 @@
 @use "layout-config";
 @use "reset";
 @use "atoms" as *;
-
+@use "utilities" as *;
 body {
   h1 {
     @include text-heading-1;
@@ -13,5 +13,7 @@ body {
   p {
     @include text-paragraph-1;
   }
-  margin: 0;
+  ul {
+    @include list;
+  }
 }

@@ -1,3 +1,7 @@
+/*
+See post on fluid typo in my blog.
+*/
+
 @font-face {
   font-family: "Montserrat";
   src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
@@ -102,11 +106,9 @@ $font-weights: (
 }
 
 /* line height */
-$line-height-sm: 1.1;
-$line-height-normal: 1.6;
-$line-height-bg: 2;
+$line-height-heading: 1.1;
+$line-height-paragraph: 1.6;
 
 /* letter spacing */
-$letter-spacing-sm: 0.02em;
-$letter-spacing-normal: 0.04em;
-$letter-spacing-bg: 0.06em;
+$letter-spacing-heading: 0.02em;
+$letter-spacing-paragraph: 0.04em;

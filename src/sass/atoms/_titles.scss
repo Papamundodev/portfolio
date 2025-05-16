@@ -1,21 +1,30 @@
 @use "../design-tokens" as *;
-
+@use "../utilities" as *;
 /********* Titles *********/
 
 @mixin text-heading-1 {
   font-family: $heading-font;
   font-size: $font-size-bg;
-  line-height: $line-height-bg;
+  line-height: $line-height-heading;
   font-weight: $font-weight-700;
-  letter-spacing: $letter-spacing-sm;
+  letter-spacing: $letter-spacing-heading;
   text-wrap: balance;
 }
 
 @mixin text-heading-2 {
   font-family: $heading-font;
   font-size: $font-size-xl;
-  line-height: $line-height-bg;
+  line-height: $line-height-heading;
   font-weight: $font-weight-600;
-  letter-spacing: $letter-spacing-sm;
+  letter-spacing: $letter-spacing-heading;
   text-wrap: balance;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-end: $spacer-md;
 }
