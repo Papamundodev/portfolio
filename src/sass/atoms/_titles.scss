@@ -28,3 +28,15 @@ h5,
 h6 {
   margin-block-end: $spacer-md;
 }
+
+.title-gradient {
+  background-image: $linear-gradient-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: fit-content;
+}

@@ -16,5 +16,7 @@ export default defineConfig(({ mode }) => {
       sourcemap: mode === "development",
       minify: mode === "production",
     },
+    publicDir: "src/assets",
+    assetsInclude: ["**/*.woff2", "**/*.ttf", "**/*.woff"],
   };
 });

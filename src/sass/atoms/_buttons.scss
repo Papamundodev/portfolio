@@ -1,0 +1,93 @@
+@use "../design-tokens" as *;
+@use "../utilities" as *;
+/* ------- BUTTONS  ------- */
+
+@mixin btn {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  cursor: pointer;
+  text-align: inherit;
+}
+
+.button {
+  @include btn;
+  background-color: $primary-color-surface-1;
+  color: $gradient-3;
+  border-radius: $border-radius-sm;
+  padding: $spacer-sm $spacer-xl;
+  font-size: $font-size-default;
+  font-weight: $font-weight-400;
+  font-family: $heading-font;
+}
+
+/* do 3 differents buttons */
+
+.button-container-gradient {
+  position: relative;
+  background: $link-color;
+  border-radius: $border-radius-sm;
+  padding: 1.5px;
+  width: fit-content;
+  &:hover {
+    background: conic-gradient(
+        from var(--angle),
+        $gradient-3,
+        $gradient-1,
+        $gradient-2,
+        $gradient-1,
+        $gradient-3
+      )
+      border-box;
+    animation: rotate 10s linear infinite;
+    button {
+      color: $link-hover-color;
+      background-color: $tertiary-color-surface-1;
+      text-decoration: underline;
+      text-decoration-thickness: 0.09rem;
+      text-underline-offset: 0.2rem;
+      text-decoration-color: $gradient-2;
+    }
+  }
+  &:active {
+    background: $link-active-color;
+    button {
+      color: $link-active-color;
+      text-decoration-color: $link-active-color;
+    }
+  }
+}
+
+.button-container-shadow-top-right {
+  position: relative;
+  background: $link-color;
+  //border-radius: $border-radius-sm;
+  padding: 1.5px;
+  width: fit-content;
+  &:hover {
+    background-color: $gradient-2;
+    box-shadow: 5px -5px 0 0 $gradient-2;
+    button {
+      // color: $link-hover-color;
+      // text-decoration: underline;
+      // text-decoration-thickness: 0.09rem;
+      // text-underline-offset: 0.2rem;
+      // text-decoration-color: $gradient-2;
+    }
+  }
+  &:active {
+    background: $link-active-color;
+    button {
+      color: $link-active-color;
+      text-decoration-color: $link-active-color;
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}

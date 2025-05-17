@@ -1,3 +1,3 @@
 /* Then define the layer order */
 /* The layout rules are importred at the end if i put them in the main.scss, so until i understand why i put them in a scpecific file and import those rule before anything else, i will keep them in this file */
-@layer reset, design-tokens, atoms, molecules, organisms, pages, components;
+@layer reset, design-tokens, atoms, molecules, organisms, pages, components, theme;

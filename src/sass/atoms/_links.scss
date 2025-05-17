@@ -1,1 +1,13 @@
 @use "../design-tokens" as *;
+
+@mixin text-link-1 {
+  color: $link-color;
+  font-family: $link-font;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration-thickness: 0.1em;
+    font-weight: $font-weight-600;
+    transition: text-decoration-thickness 0.2s ease-in-out,
+      font-weight 0.25s ease-in-out;
+  }
+}

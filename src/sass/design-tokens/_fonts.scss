@@ -4,7 +4,7 @@ See post on fluid typo in my blog.
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
   font-weight: 100 900;
   font-display: swap;
   font-stretch: 100%;
@@ -13,7 +13,7 @@ See post on fluid typo in my blog.
 
 @font-face {
   font-family: "EB Garamond";
-  src: url("../../fonts/EBGaramond-VariableFont_wght.ttf") format("ttf");
+  src: url("../fonts/EBGaramond-VariableFont_wght.ttf") format("ttf");
   font-weight: 100 900;
   font-display: swap;
   font-stretch: 100%;
@@ -22,7 +22,16 @@ See post on fluid typo in my blog.
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+  src: url("../fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+  font-weight: 100 900;
+  font-display: swap;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-VariableFont_wght.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
   font-stretch: 100%;
@@ -36,11 +45,12 @@ See post on fluid typo in my blog.
 $text-font: "EB Garamond", system-ui, -apple-system, "Segoe UI", sans-serif;
 $heading-font: "Oswald", system-ui, -apple-system, "Segoe UI", sans-serif;
 $nav-font: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
-
+$link-font: "Fira Code", system-ui, -apple-system, "Segoe UI", sans-serif;
 $fonts: (
   "text": $text-font,
   "heading": $heading-font,
   "nav": $nav-font,
+  "link": $link-font,
 );
 
 @each $key, $value in $fonts {

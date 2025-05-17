@@ -39,11 +39,9 @@ $spacers: (
 
 /* ------- Wrapper ------- */
 
-$wrapper-border-inline: 3px;
+$border-size: 3px;
 $wrapper-padding-inline: $spacer-md;
-$border-padding-inline: calc(
-  $wrapper-border-inline * 2 + $wrapper-padding-inline * 2
-);
+$border-padding-inline: calc($border-size * 2 + $wrapper-padding-inline * 2);
 
 .container {
   @media (width >= $breakpoint-sm) {
@@ -51,7 +49,7 @@ $border-padding-inline: calc(
       padding-inline: $wrapper-padding-inline;
     }
     .wrapper-border-inline {
-      border-inline: $wrapper-border-inline solid $gray-color;
+      border-inline: $border-size solid $gray-color;
       padding-block-end: $spacer-md;
     }
   }

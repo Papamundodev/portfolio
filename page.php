@@ -12,10 +12,15 @@ $title = get_the_title();
 
         <section>
             <!-- Page Title -->
-            <div class="wrapper">
-                <div class="page-title">
+            <div class="wrapper flex-center">
+                <div class="page-title title-gradient">
                     <h1><?=$title; ?></h1>
                 </div><!-- End Page Title -->
+                <div class="img-container-logo-sm">
+                    <a href="<?=home_url();?>" aria-label="<?=get_bloginfo('name');?>">
+                        <img src="<?=get_template_directory_uri();?>/assets/images/logo.jpg" title="logo" alt="logo">
+                    </a>
+                </div>
             </div>
 
         </section>
@@ -119,6 +124,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                                                        <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -132,6 +140,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -145,6 +156,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
 
@@ -160,6 +174,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -173,6 +190,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -186,6 +206,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
 
@@ -201,6 +224,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -214,6 +240,9 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
                     <div>
@@ -227,13 +256,124 @@ $title = get_the_title();
                             <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                             <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
                         </div>
                     </div>
-                    
+                    <div>
+                        <div class="bg-background-color element-ratio-calculating">
+                            <div class="">
+                                <p class="">background-color</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="gradient-1 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-2 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gradient-3 text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-1 element-ratio-calculating">
+                            <div class="">
+                                <p class="">gradient-1</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-2 element-ratio-calculating">
+                            <div class="">
+                                <p class="">gradient-2</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-3 element-ratio-calculating">
+                            <div class="">
+                                <p class="">gradient-3</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                                        <div>
+                        <div class="bg-primary-color element-ratio-calculating">
+                            <div class="">
+                                <p class="">primary-color</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-secondary-color element-ratio-calculating">
+                            <div class="">
+                                <p class="">secondary-color</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-tertiary-color element-ratio-calculating">
+                            <div class="">
+                                <p class="">tertiary-color</p>
+                                <div class="bg-color-computed"></div>
+                            </div>
+                            <p class="default-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="background-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="gray-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-hover-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                            <p class="link-active-color text-color">Lorem ipsum dolor. <span class="ratio"></span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="wrapper wrapper-border-inline">
+                <div class="section-title">
+                    <h2 class="">Button</h2>
+                </div>
+                <div class="flex-column-center">
+                    <div class="button-container-gradient flex-center">
+                        <button class="button">Essayer gratuitement</button>
+                    </div>                
+                    <div class="button-container-shadow-top-right flex-center">
+                        <button class="button">Button c'est un gros bouton graphique</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 <?php

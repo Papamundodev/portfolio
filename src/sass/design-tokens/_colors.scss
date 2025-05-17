@@ -1,3 +1,9 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 /* Colors */
 :root {
   /* black and white */
@@ -10,7 +16,7 @@
   --gray-color: #afbdbf;
 
   /* primary colors */
-  --primary-color: #300a58; // svg background
+  --primary-color: #5f2b96; // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -24,11 +30,11 @@
   --primary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--primary-color) 15%
+    var(--primary-color) 25%
   );
 
   /* secondary colors */
-  --secondary-color: #121554; // svg background
+  --secondary-color: #31358a; // svg background
   --secondary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -42,11 +48,11 @@
   --secondary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--secondary-color) 15%
+    var(--secondary-color) 25%
   );
 
   /* tertiary colors */
-  --tertiary-color: #5c0c3c; // svg background
+  --tertiary-color: #a90065; // svg background
   --tertiary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -60,20 +66,27 @@
   --tertiary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--tertiary-color) 15%
+    var(--tertiary-color) 25%
   );
 
   /*action colors*/
   --link-color: var(--primary-color);
   --link-hover-color: var(--secondary-color);
   --link-active-color: var(--tertiary-color);
-
-  /*gradient colors*/
-  --gradient-color: linear-gradient(
+  --gradient-1: #942fff;
+  --gradient-2: #323cff;
+  --gradient-3: #ff35ae;
+  --conic-gradient-color: conic-gradient(
+    from var(--angle),
+    var(--gradient-1),
+    var(--gradient-2),
+    var(--gradient-3)
+  );
+  --linear-gradient-color: linear-gradient(
     to right,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--tertiary-color)
+    var(--gradient-1),
+    var(--gradient-2),
+    var(--gradient-3)
   );
 }
 
@@ -85,7 +98,7 @@
   --gray-color: #3b4142;
 
   /* primary colors */
-  --primary-color: #c088fa; // svg background
+  --primary-color: #cb9cfc; // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -99,11 +112,11 @@
   --primary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--primary-color) 15%
+    var(--primary-color) 25%
   );
 
   /* secondary colors */
-  --secondary-color: #a1a5ff; // svg background
+  --secondary-color: #a8acfb; // svg background
   --secondary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -117,7 +130,7 @@
   --secondary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--secondary-color) 15%
+    var(--secondary-color) 25%
   );
 
   /* tertiary colors */
@@ -135,21 +148,13 @@
   --tertiary-color-surface-3: color-mix(
     in srgb,
     var(--background-color),
-    var(--tertiary-color) 15%
+    var(--tertiary-color) 25%
   );
 
   /*action colors*/
   --link-color: var(--primary-color);
   --link-hover-color: var(--secondary-color);
   --link-active-color: var(--tertiary-color);
-
-  /*gradient colors*/
-  --gradient-color: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--tertiary-color)
-  );
 }
 
 $black-color: var(--black-color);
@@ -174,7 +179,11 @@ $gray-color: var(--gray-color);
 $link-color: var(--link-color);
 $link-hover-color: var(--link-hover-color);
 $link-active-color: var(--link-active-color);
-$gradient-color: var(--gradient-color);
+$conic-gradient-color: var(--conic-gradient-color);
+$linear-gradient-color: var(--linear-gradient-color);
+$gradient-1: var(--gradient-1);
+$gradient-2: var(--gradient-2);
+$gradient-3: var(--gradient-3);
 
 $colors: (
   "background-color": $background-color,
@@ -197,7 +206,11 @@ $colors: (
   "link-color": $link-color,
   "link-hover-color": $link-hover-color,
   "link-active-color": $link-active-color,
-  "gradient-color": $gradient-color,
+  "conic-gradient-color": $conic-gradient-color,
+  "linear-gradient-color": $linear-gradient-color,
+  "gradient-1": $gradient-1,
+  "gradient-2": $gradient-2,
+  "gradient-3": $gradient-3,
 );
 
 @each $key, $value in $colors {

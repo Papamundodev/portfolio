@@ -1,0 +1,39 @@
+/* ------- IMG  ------- */
+$icon-xs: 16px;
+$icon-sm: 24px;
+$icon-md: 32px;
+$icon-lg: 48px;
+$logo-sm: 60px;
+$logo-md: 80px;
+$logo-lg: 100px;
+$full: 100%;
+
+$img-sizes: (
+  "icon-xs": $icon-xs,
+  "icon-sm": $icon-sm,
+  "icon-md": $icon-md,
+  "icon-lg": $icon-lg,
+  "logo-sm": $logo-sm,
+  "logo-md": $logo-md,
+  "logo-lg": $logo-lg,
+  "full": 100%,
+);
+
+/* ------- border-radius ------- */
+$border-radius-sharp: 0.02em;
+$border-radius-sm: 3px;
+$border-radius-md: 5px;
+$border-radius-rounded: 10px;
+$border-radius-pill: 999px;
+$border-radius-circle: 50%;
+$border-radius-retro: 10px 20px 30px 40px;
+
+$border-radius: (
+  "sharp": $border-radius-sharp,
+  "sm": $border-radius-sm,
+  "md": $border-radius-md,
+  "rounded": $border-radius-rounded,
+  "pill": $border-radius-pill,
+  "circle": $border-radius-circle,
+  "retro": $border-radius-retro,
+);
