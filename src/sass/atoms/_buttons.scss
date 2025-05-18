@@ -7,30 +7,54 @@
   border: none;
   padding: 0;
   margin: 0;
-  background-color: inherit;
   cursor: pointer;
-  text-align: inherit;
 }
 
 .button {
   @include btn;
-  background-color: $primary-color-surface-1;
-  color: $gradient-3;
-  border-radius: $border-radius-sm;
+  border-radius: $border-radius-default;
   padding: $spacer-sm $spacer-xl;
-  font-size: $font-size-default;
-  font-weight: $font-weight-400;
-  font-family: $heading-font;
+  background-color: inherit;
 }
 
 /* do 3 differents buttons */
+@mixin button-container {
+  width: fit-content;
+  position: relative;
+  padding: $border-size-thin;
+  border-radius: $border-radius-default;
+  margin-block-end: $spacer-md;
+}
+
+.button-container-primary {
+  @include button-container;
+  background: $primary-color;
+  button {
+    background-color: $primary-color;
+    color: $background-color;
+  }
+  &:hover {
+    background: $secondary-color;
+    button {
+      background-color: $secondary-color;
+    }
+  }
+  &:active,
+  &:focus {
+    background: $tertiary-color;
+    button {
+      background-color: $tertiary-color;
+    }
+  }
+}
 
 .button-container-gradient {
-  position: relative;
+  @include button-container;
   background: $link-color;
-  border-radius: $border-radius-sm;
-  padding: 1.5px;
-  width: fit-content;
+  button {
+    background-color: $tertiary-color-surface-1;
+    color: $link-color;
+  }
   &:hover {
     background: conic-gradient(
         from var(--angle),
@@ -43,15 +67,14 @@
       border-box;
     animation: rotate 10s linear infinite;
     button {
-      color: $link-hover-color;
-      background-color: $tertiary-color-surface-1;
       text-decoration: underline;
       text-decoration-thickness: 0.09rem;
       text-underline-offset: 0.2rem;
       text-decoration-color: $gradient-2;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
     background: $link-active-color;
     button {
       color: $link-active-color;
@@ -61,27 +84,24 @@
 }
 
 .button-container-shadow-top-right {
-  position: relative;
+  @include button-container;
   background: $link-color;
-  //border-radius: $border-radius-sm;
-  padding: 1.5px;
-  width: fit-content;
-  &:hover {
-    background-color: $gradient-2;
-    box-shadow: 5px -5px 0 0 $gradient-2;
-    button {
-      // color: $link-hover-color;
-      // text-decoration: underline;
-      // text-decoration-thickness: 0.09rem;
-      // text-underline-offset: 0.2rem;
-      // text-decoration-color: $gradient-2;
-    }
+  button {
+    background-color: $primary-color-surface-1;
+    color: $link-color;
   }
-  &:active {
-    background: $link-active-color;
+  &:hover {
+    box-shadow: 5px -5px 0 0 $gradient-2;
+    background-color: $gradient-2;
+  }
+  &:active,
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
     button {
       color: $link-active-color;
       text-decoration-color: $link-active-color;
+      transform: translate(6px, -6px);
     }
   }
 }

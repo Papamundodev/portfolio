@@ -9,18 +9,26 @@
   font-weight: $font-weight-400;
   letter-spacing: $letter-spacing-paragraph;
   text-wrap: pretty;
+  margin-block-end: $spacer-md;
 }
 
 @mixin list {
   & {
     padding-inline: $spacer-sm;
     padding-block: $spacer-xl;
+    margin-block-end: $spacer-md;
     li {
       margin-bottom: $spacer-md;
       margin-inline-start: $spacer-lg;
+      p {
+        margin-block-end: 0;
+      }
     }
     li:last-child {
       margin-bottom: 0;
     }
+  }
+  li::marker {
+    color: $primary-color;
   }
 }

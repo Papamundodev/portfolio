@@ -1,7 +1,16 @@
+@use "design-tokens" as *;
+
 @layer theme {
   #tld-theme-toggle {
     position: fixed;
     top: 0;
     left: 0;
+  }
+
+  .section-intro {
+    font-family: $text-font;
+    font-size: $font-size-default;
+    font-weight: $font-weight-400;
+    background-color: $primary-color-surface-1;
   }
 }

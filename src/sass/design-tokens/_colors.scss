@@ -13,10 +13,10 @@
   --background-color: var(--white-color);
   --contrast-color: var(--white-color);
   --default-color: var(--black-color);
-  --gray-color: #afbdbf;
+  --gray-color: hsl(288, 20%, 85%);
 
   /* primary colors */
-  --primary-color: #5f2b96; // svg background
+  --primary-color: hsl(288, 70%, 38%); // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -34,7 +34,7 @@
   );
 
   /* secondary colors */
-  --secondary-color: #31358a; // svg background
+  --secondary-color: hsl(213, 70%, 30%); // svg background
   --secondary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -52,7 +52,7 @@
   );
 
   /* tertiary colors */
-  --tertiary-color: #a90065; // svg background
+  --tertiary-color: hsl(319, 70%, 38%); // svg background
   --tertiary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -73,9 +73,9 @@
   --link-color: var(--primary-color);
   --link-hover-color: var(--secondary-color);
   --link-active-color: var(--tertiary-color);
-  --gradient-1: #942fff;
-  --gradient-2: #323cff;
-  --gradient-3: #ff35ae;
+  --gradient-1: hsl(288, 90%, 45%);
+  --gradient-2: hsl(213, 90%, 45%);
+  --gradient-3: hsl(319, 90%, 45%);
   --conic-gradient-color: conic-gradient(
     from var(--angle),
     var(--gradient-1),
@@ -95,10 +95,10 @@
   --background-color: var(--black-color);
   --contrast-color: var(--white-color);
   --default-color: var(--white-color);
-  --gray-color: #3b4142;
+  --gray-color: hsl(288, 25%, 15%);
 
   /* primary colors */
-  --primary-color: #cb9cfc; // svg background
+  --primary-color: hsl(288, 70%, 62%); // svg background
   --primary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -116,7 +116,7 @@
   );
 
   /* secondary colors */
-  --secondary-color: #a8acfb; // svg background
+  --secondary-color: hsl(213, 70%, 62%); // svg background
   --secondary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -134,7 +134,7 @@
   );
 
   /* tertiary colors */
-  --tertiary-color: #fb92d1; // svg background
+  --tertiary-color: hsl(319, 70%, 62%); // svg background
   --tertiary-color-surface-1: color-mix(
     in srgb,
     var(--background-color),
@@ -155,6 +155,10 @@
   --link-color: var(--primary-color);
   --link-hover-color: var(--secondary-color);
   --link-active-color: var(--tertiary-color);
+
+  --gradient-1: hsl(288, 90%, 52%);
+  --gradient-2: hsl(213, 90%, 52%);
+  --gradient-3: hsl(319, 90%, 52%);
 }
 
 $black-color: var(--black-color);

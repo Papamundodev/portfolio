@@ -5,7 +5,7 @@
 @mixin grid-table-2-columns {
   // mobile
   @include flex-column-center($spacer-md);
-  border-block-end: $border-size solid $gray-color;
+  border-block-end: $border-size-thick solid $gray-color;
   padding-block: $spacer-md;
   // responsive
   @media (width >= $breakpoint-sm) {

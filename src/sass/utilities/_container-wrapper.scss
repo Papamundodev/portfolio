@@ -39,17 +39,20 @@ $spacers: (
 
 /* ------- Wrapper ------- */
 
-$border-size: 3px;
+$border-size-thick: 3px;
+$border-size-thin: 1.5px;
 $wrapper-padding-inline: $spacer-md;
-$border-padding-inline: calc($border-size * 2 + $wrapper-padding-inline * 2);
+$border-padding-inline: calc(
+  $border-size-thick * 2 + $wrapper-padding-inline * 2
+);
 
 .container {
+  .wrapper {
+    padding-inline: $wrapper-padding-inline;
+  }
   @media (width >= $breakpoint-sm) {
-    .wrapper {
-      padding-inline: $wrapper-padding-inline;
-    }
     .wrapper-border-inline {
-      border-inline: $border-size solid $gray-color;
+      border-inline: $border-size-thick solid $gray-color;
       padding-block-end: $spacer-md;
     }
   }

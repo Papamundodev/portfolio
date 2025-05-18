@@ -26,9 +26,19 @@ $title = get_the_title();
         </section>
 
         <section>
-            <div class="wrapper wrapper-border-inline">
+            <div class="wrapper wrapper-border-inline section-intro">
                 <div class=""><?=$content;?></div>
+                <div class="button-container-gradient flex-center">
+                    <button class="button">Essayer gratuitement</button>
+                </div>  
+                <div class="button-container-shadow-top-right flex-center">
+                    <button class="button">Button c'est un gros bouton graphique</button>
+                </div>
+                <div class="button-container-primary flex-center">
+                    <button class="button">Button c'est un gros bouton graphique</button>
+                </div>
             </div>
+
         </section>
 
         <section>
@@ -369,6 +379,9 @@ $title = get_the_title();
                         <button class="button">Essayer gratuitement</button>
                     </div>                
                     <div class="button-container-shadow-top-right flex-center">
+                        <button class="button">Button c'est un gros bouton graphique</button>
+                    </div>
+                    <div class="button-container-primary flex-center">
                         <button class="button">Button c'est un gros bouton graphique</button>
                     </div>
                 </div>

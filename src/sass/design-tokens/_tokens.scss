@@ -7,6 +7,7 @@ $logo-sm: 60px;
 $logo-md: 80px;
 $logo-lg: 100px;
 $full: 100%;
+$img-default: $icon-md;
 
 $img-sizes: (
   "icon-xs": $icon-xs,
@@ -17,6 +18,7 @@ $img-sizes: (
   "logo-md": $logo-md,
   "logo-lg": $logo-lg,
   "full": 100%,
+  "default": $img-default,
 );
 
 /* ------- border-radius ------- */
@@ -27,6 +29,7 @@ $border-radius-rounded: 10px;
 $border-radius-pill: 999px;
 $border-radius-circle: 50%;
 $border-radius-retro: 10px 20px 30px 40px;
+$border-radius-default: $border-radius-md;
 
 $border-radius: (
   "sharp": $border-radius-sharp,
@@ -36,4 +39,5 @@ $border-radius: (
   "pill": $border-radius-pill,
   "circle": $border-radius-circle,
   "retro": $border-radius-retro,
+  "default": $border-radius-default,
 );

@@ -18,6 +18,7 @@
   font-weight: $font-weight-600;
   letter-spacing: $letter-spacing-heading;
   text-wrap: balance;
+  color: $primary-color;
 }
 
 h1,
@@ -27,6 +28,7 @@ h4,
 h5,
 h6 {
   margin-block-end: $spacer-md;
+  padding-block-start: $spacer-md;
 }
 
 .title-gradient {
