@@ -13,14 +13,54 @@
 }
 
 @each $key, $value in $img-sizes {
+  .img-container-circle-#{$key} {
+    width: $value;
+    height: $value;
+    @include flex-center;
+    & > * {
+      @include flex-center;
+      img {
+        @include image-1("circle");
+      }
+      svg {
+        width: $icon-xs;
+        height: $icon-xs;
+      }
+    }
+  }
+}
+
+@each $key, $value in $img-sizes {
   .img-container-#{$key} {
     width: $value;
     height: $value;
     & > * {
       @include flex-center;
       img {
-        @include image-1("circle");
+        @include image-1;
+      }
+      svg {
+        @include image-1;
       }
     }
+  }
+}
+
+/* ------- IMG theme ------- */
+.light-icon {
+  display: block;
+}
+
+.dark-icon {
+  display: none;
+}
+
+.dark-theme {
+  .light-icon {
+    display: none;
+  }
+
+  .dark-icon {
+    display: block;
   }
 }

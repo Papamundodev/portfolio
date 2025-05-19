@@ -8,6 +8,10 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  &:focus {
+    outline: $border-size-thick solid $tertiary-color;
+    outline-offset: $spacer-xs;
+  }
 }
 
 .button {
@@ -15,6 +19,7 @@
   border-radius: $border-radius-default;
   padding: $spacer-sm $spacer-xl;
   background-color: inherit;
+  color: inherit;
 }
 
 /* do 3 differents buttons */

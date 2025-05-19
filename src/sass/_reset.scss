@@ -67,4 +67,9 @@
     max-width: 100%;
     display: block;
   }
+
+  svg {
+    width: fit-content;
+    fill: currentColor;
+  }
 }

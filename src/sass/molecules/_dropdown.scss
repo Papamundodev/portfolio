@@ -1,0 +1,175 @@
+@use "../utilities" as *;
+@use "../atoms" as *;
+@use "../design-tokens" as *;
+/* ------- DROPDOWN  ------- */
+
+@mixin dropdown-svg-rotate {
+  transition: all 0.2s step-start;
+  border-radius: $border-radius-circle;
+  svg {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.2s ease;
+    fill: $secondary-color;
+  }
+}
+
+@mixin animation-dropdown-end {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.2s ease-in-out;
+}
+
+@mixin dropdown-open {
+  overflow: initial;
+  .dropdown-link:hover {
+    @include dropdown-svg-rotate;
+  }
+  .dropdown-menu {
+    // animation
+    @include animation-dropdown-end;
+  }
+  // to match details dropdown
+  .dropdown-menu {
+    transition: 0;
+    border: $border-size-thick solid $primary-color;
+    padding-block: $spacer-sm;
+    background-color: $background-color;
+  }
+}
+
+//difine the position of each drop down in the theme
+.dropdown {
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* dropdown */
+.dropdown {
+  position: relative;
+  max-width: fit-content;
+  .dropdown-link {
+    display: grid;
+    grid-template-columns: minmax($icon-sm, auto) 1fr;
+    align-items: center;
+    width: 100%;
+    svg {
+      fill: $primary-color;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      transition: all 0.2s ease;
+    }
+    .dropdown-title {
+      padding-inline: 0;
+    }
+    &:hover {
+      svg {
+        fill: $secondary-color;
+      }
+      .dropdown-title {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    // to be in the center ed container
+    // @each $key, $value in $breakpoints {
+    //   @media (width >= $value) and (width <= $breakpoint-xxl) and (width >= $breakpoint-lg) {
+    //     & {
+    //       width: calc($value - $spacer-lg - calc($border-size-thick * 2));
+    //       margin-inline: auto;
+    //     }
+    //   }
+    // }
+    // @media (width >= $breakpoint-xxl) {
+    //   & {
+    //     width: calc(1200px);
+    //   }
+    // };
+    width: clamp(300px, 60ch, 100vw);
+  }
+
+  //accessibility
+  &:focus-visible {
+    outline: $border-size-thick solid $tertiary-color;
+    outline-offset: -3px;
+  }
+  &:focus-within:has(.dropdown-link:focus-visible) {
+    outline: $border-size-thick solid $tertiary-color;
+    outline-offset: -3px;
+    .dropdown-menu {
+      outline: none;
+    }
+  }
+  button {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/* details dropdown */
+
+details.dropdown {
+  @media (width >= $breakpoint-md) {
+    display: none;
+  }
+  &[open] {
+    @include dropdown-open;
+    .dropdown-link {
+      width: fit-content;
+      margin-inline: auto;
+      @include dropdown-svg-rotate;
+    }
+    // .dropdown-menu {
+    //   position: absolute;
+    //   z-index: 10;
+    //   top: 100%;
+    //   left: 0;
+    //   width: clamp(300px, 60ch, 100vw);
+    //   padding-block: $spacer-sm;
+    //   height: fit-content;
+    // }
+  }
+}
+
+/* hover dropdown */
+
+.dropdown-hover {
+  @media (width <= $breakpoint-md) {
+    display: none;
+  }
+  .dropdown-menu {
+    //position absolute
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding-block: $spacer-sm;
+    height: fit-content;
+  }
+
+  @media (width >= $breakpoint-md) {
+    &:hover,
+    &:focus,
+    &:focus-within {
+      @include dropdown-open;
+    }
+    &:has(.dropdown-menu:hover) {
+      &:hover {
+        @include dropdown-svg-rotate;
+        .dropdown-title {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
