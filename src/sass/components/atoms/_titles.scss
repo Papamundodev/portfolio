@@ -1,5 +1,5 @@
-@use "../design-tokens" as *;
-@use "../utilities" as *;
+@use "../../design-tokens" as *;
+@use "../../utilities" as *;
 /********* Titles *********/
 
 @mixin text-heading-1 {
@@ -19,6 +19,15 @@
   letter-spacing: $letter-spacing-heading;
   text-wrap: balance;
   color: $primary-color;
+}
+
+@mixin text-heading-3 {
+  font-family: $heading-font;
+  font-size: $font-size-md;
+  line-height: $line-height-heading;
+  font-weight: $font-weight-600;
+  letter-spacing: $letter-spacing-heading;
+  text-wrap: balance;
 }
 
 h1,

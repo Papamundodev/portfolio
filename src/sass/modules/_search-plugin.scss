@@ -1,0 +1,88 @@
+@use "../utilities" as *;
+@use "../design-tokens" as *;
+
+// structure
+#open-search-modal {
+  @include flex-center;
+  padding: $spacer-sm;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .search__btn__icon {
+    width: fit-content;
+    @include flex-column-center;
+    svg {
+      width: $icon-xs;
+      height: $icon-xs;
+    }
+  }
+}
+
+// style
+#open-search-modal {
+  background-color: $background-color;
+  border: 1.5px solid $primary-color;
+  outline: none;
+  border-radius: 0.5em;
+  span {
+    color: $primary-color;
+    font-size: $icon-xs;
+    line-height: 1;
+  }
+  .search__btn__icon svg {
+    fill: $primary-color;
+  }
+  &:hover {
+    transition: 0.2s ease-in-out;
+    border-color: $secondary-color;
+    span {
+      color: $secondary-color;
+      transition: 0.2s ease-in-out;
+    }
+    .search__btn__icon svg {
+      fill: $secondary-color;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+// #search-results-popover {
+//   height: 100%;
+//   overflow-y: auto;
+//   margin-block-start: calc($spacer-xxl * 2);
+//   padding: 1em;
+//   border-radius: 0.5em;
+//   @media (width >= 768px) {
+//     width: 75vw;
+//   }
+//   @media (width >= 992px) {
+//     width: 55vw;
+//   }
+//   &::backdrop {
+//     background-color: $black-color;
+//     opacity: 0.8;
+//   }
+// }
+
+// .input-search {
+//   border: none;
+//   outline: none;
+//   padding: 0.5em;
+//   border-radius: 0.5em;
+//   width: 100%;
+//   font-size: 1.5rem;
+//   color: $default-color;
+//   background-color: $background-color;
+//   &:focus {
+//     border-bottom: 2px solid $surface-color-2;
+//   }
+// }
+
+// #search-results-popover {
+//   background-color: $background-color-4;
+//   color: $default-color;
+// }
+// #aas-search-input {
+//   background-color: $surface-color;
+// }

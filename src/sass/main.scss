@@ -2,11 +2,13 @@
 
 @use "layout-config";
 @use "reset";
-@use "atoms" as *;
-@use "molecules" as *;
+@use "components/atoms" as *;
+@use "components/molecules" as *;
+@use "components/organisms" as *;
 @use "utilities" as *;
 @use "design-tokens" as *;
 @use "theme";
+@use "modules" as *;
 body {
   h1 {
     @include text-heading-1;
@@ -14,17 +16,23 @@ body {
   h2 {
     @include text-heading-2;
   }
+  h3 {
+    @include text-heading-3;
+  }
   p {
     @include text-paragraph-1;
     max-width: 75ch;
   }
-  a {
+  a:not(.nav-link) {
     @include text-link-1;
   }
-  ul,
+  ul:not(.ul-reset),
   ol {
     @include list;
   }
+}
+
+body {
   background-color: $background-color;
   color: $default-color;
 }

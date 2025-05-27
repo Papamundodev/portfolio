@@ -1,5 +1,5 @@
-@use "../design-tokens" as *;
-@use "../utilities" as *;
+@use "../../design-tokens" as *;
+@use "../../utilities" as *;
 /* ------- BUTTONS  ------- */
 
 @mixin btn {
@@ -8,10 +8,15 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
+  background-color: transparent;
   &:focus {
     outline: $border-size-thick solid $tertiary-color;
     outline-offset: $spacer-xs;
   }
+}
+
+.btn {
+  @include btn;
 }
 
 .button {

@@ -1,0 +1,106 @@
+@use "../../utilities/container-wrapper" as *;
+@use "../../design-tokens" as *;
+@use "../../utilities/flex" as *;
+@use "./dropdown" as *;
+
+@mixin nav-item {
+  background-color: $primary-color-surface-1;
+  cursor: pointer;
+  border-radius: $border-radius-md;
+  outline: $border-size-thin solid $primary-color-surface-3;
+}
+
+.navmenu {
+  ul {
+    gap: $spacer-sm;
+    .dropdown-nav {
+      @include dropdown-nav;
+    }
+  }
+}
+
+/* ----- NAVBAR DESKTOP ----- */
+@media (width >= $breakpoint-md) {
+  .navmenu-mobile {
+    display: none;
+  }
+
+  .navmenu-desktop {
+    ul {
+      position: relative;
+      width: fit-content;
+      margin-inline: auto;
+      nav.dropdown-nav {
+        .dropdown-menu {
+          top: calc(100% + $spacer-lg);
+          &::after {
+            content: "";
+            position: absolute;
+            top: -$spacer-lg;
+            left: 0;
+            right: 0;
+            height: $spacer-lg;
+            background: transparent;
+          }
+        }
+      }
+      li {
+        & > * {
+          @include flex-center;
+          min-height: calc($spacer-xxl / 2);
+          @include nav-item;
+          padding: $spacer-sm $spacer-vi-lg;
+        }
+      }
+    }
+  }
+}
+
+/* ----- NAVBAR MOBILE ----- */
+
+@media (width <= $breakpoint-md) {
+  .navmenu-desktop {
+    display: none;
+  }
+  .navmenu-mobile {
+    animation: fade-out 0.3s ease-out;
+    background-color: $background-color;
+    position: fixed;
+    top: $spacer-xxl;
+    right: auto;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    transition-behavior: allow-discrete;
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+      margin: auto;
+      width: fit-content;
+      padding-block: $spacer-md;
+      li {
+        margin-bottom: $spacer-md;
+        & > .nav-link {
+          padding: $spacer-sm $spacer-vi-lg;
+          display: block;
+          @include nav-item;
+        }
+        & > details {
+          summary {
+            padding: $spacer-sm $spacer-vi-xl;
+            @include nav-item;
+          }
+        }
+      }
+      li,
+      .dropdown {
+        margin-inline: auto;
+      }
+    }
+  }
+  #navmenu-header-mobile:popover-open {
+    animation: fade-in 0.3s ease-out;
+  }
+}

@@ -20,3 +20,4 @@ export default defineConfig(({ mode }) => {
     assetsInclude: ["**/*.woff2", "**/*.ttf", "**/*.woff"],
   };
 });
+

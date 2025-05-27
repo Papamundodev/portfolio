@@ -74,5 +74,16 @@ function getLuminance(r, g, b) {
 }
 document.addEventListener("DOMContentLoaded", () => {
   updateContrastRatio();
+  const burger = document.querySelector("#theme-navbar-toggler");
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+  });
+  const popover = document.getElementById("navmenu-header-mobile");
+  popover.addEventListener("toggle", (event) => {
+    if (event.newState === "closed") {
+      burger.classList.remove("open");
+    } else if (event.newState === "open")
+      ;
+  });
 });
 //# sourceMappingURL=main.js.map

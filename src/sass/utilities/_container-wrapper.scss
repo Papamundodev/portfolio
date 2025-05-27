@@ -23,6 +23,13 @@ $spacer-lg: 20px;
 $spacer-xl: 25px;
 $spacer-xxl: 85px;
 
+$spacer-vi-xs: calc($spacer-xs + 0.5vi);
+$spacer-vi-sm: calc($spacer-sm + 0.5vi);
+$spacer-vi-md: calc($spacer-md + 0.5vi);
+$spacer-vi-lg: calc($spacer-lg + 0.5vi);
+$spacer-vi-xl: calc($spacer-xl + 0.5vi);
+$spacer-vi-xxl: calc($spacer-xxl + 0.5vi);
+
 $spacers: (
   "xs": $spacer-xs,
   "sm": $spacer-sm,
@@ -40,7 +47,7 @@ $spacers: (
 /* ------- Wrapper ------- */
 
 $border-size-thick: 3px;
-$border-size-thin: 1.5px;
+$border-size-thin: 1px;
 $wrapper-padding-inline: $spacer-md;
 $border-padding-inline: calc(
   $border-size-thick * 2 + $wrapper-padding-inline * 2

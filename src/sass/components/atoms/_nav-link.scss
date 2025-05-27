@@ -1,0 +1,17 @@
+@use "../../design-tokens" as *;
+@use "../../utilities/container-wrapper" as *;
+
+@mixin nav-text {
+  text-decoration: none;
+  font-family: $nav-font;
+  font-size: $nav-font-size;
+  font-weight: $font-weight-400;
+  color: $primary-color;
+  @media (width <= $breakpoint-md) {
+    font-size: $nav-font-size-mobile;
+  }
+}
+
+.nav-link {
+  @include nav-text;
+}

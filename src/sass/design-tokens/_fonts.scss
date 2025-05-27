@@ -69,6 +69,9 @@ $font-size-xl: clamp(2.4414rem, 2.3193rem + 0.6104vi, 3.0518rem);
 $font-size-xxl: clamp(3.0518rem, 2.8992rem + 0.7629vi, 3.8147rem);
 $font-size-bg: clamp(4.7684rem, 4.53rem + 1.1921vi, 5.9605rem);
 
+$nav-font-size: clamp(0.9rem, 0.75rem + 0.3vi, 1.3rem);
+$nav-font-size-mobile: 1.3rem;
+
 $font-sizes: (
   "xs": $font-size-xs,
   "sm": $font-size-sm,

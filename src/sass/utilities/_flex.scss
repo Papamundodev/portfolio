@@ -31,3 +31,13 @@
 .flex-start {
   @include flex-start;
 }
+
+@mixin flex-end($gap: $spacer-md) {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: $gap;
+}
+.flex-end {
+  @include flex-end;
+}

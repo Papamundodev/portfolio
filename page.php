@@ -6,7 +6,7 @@ $content = get_the_content();
 $title = get_the_title();
 ?>
 
-    <main id="main-<?=$theme_template_name?>">
+    <main id="main-<?=$theme_template_name?>" class="content">
 
     <div class="container">
 
@@ -16,11 +16,6 @@ $title = get_the_title();
                 <div class="page-title title-gradient">
                     <h1><?=$title; ?></h1>
                 </div><!-- End Page Title -->
-                <div class="img-container-circle-logo-sm">
-                    <a href="<?=home_url();?>" aria-label="<?=get_bloginfo('name');?>">
-                        <img src="<?=get_template_directory_uri();?>/assets/images/logo.jpg" title="logo" alt="logo">
-                    </a>
-                </div>
             </div>
 
         </section>
@@ -420,7 +415,7 @@ $title = get_the_title();
                 <div>
                     <div class="">
                         <div class="">
-                            <h2 class="">Hover desktop</h2>
+                            <h3 class="">Hover desktop</h3>
                             <div class="flex-center">
                                 <nav id="dropdown-hover" aria-label="navigation" tabindex="0" class="dropdown-hover dropdown">
                                     <div class="dropdown-link ">
