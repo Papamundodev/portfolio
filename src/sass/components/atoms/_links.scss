@@ -12,3 +12,11 @@
       font-weight 0.25s ease-in-out;
   }
 }
+
+@mixin text-link-2 {
+  color: $link-color;
+  font-family: $nav-font;
+  &:hover {
+    color: $link-hover-color;
+  }
+}

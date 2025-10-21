@@ -201,7 +201,8 @@ class Base
     {
         $active_class = '';
         $page_for_posts = get_option('page_for_posts');
-        if(self::get_object_type($item['object']) === 'post' && $object->post_type === 'post'){
+        if ($object !== null) {
+            if(self::get_object_type($item['object']) === 'post' && $object->post_type === 'post'){
             if($item['object']->ID === intval($page_for_posts)){
                 $active_class = 'active';
             }
@@ -210,6 +211,8 @@ class Base
                 $active_class = 'active';
             }
         }
+        }
+
         return $active_class;
     }
 

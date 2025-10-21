@@ -466,6 +466,7 @@ $title = get_the_title();
                 </div>
             </div>
         </section>
+
         <section>
             <div class="wrapper wrapper-border-inline bg-primary-color-surface-1">
                 <div class="section-title">
@@ -484,6 +485,8 @@ $title = get_the_title();
                 </div>
             </div>
         </section>
+
+    </div>
     </main>
 
 <?php
