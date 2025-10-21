@@ -63,10 +63,11 @@ $fonts: (
 $font-size-xs: clamp(0.625rem, 0.5875rem + 0.1875vi, 0.8125rem);
 $font-size-sm: clamp(0.8125rem, 0.7625rem + 0.25vi, 1rem);
 $font-size-default: clamp(1rem, 0.95rem + 0.3125vi, 1.25rem);
-$font-size-md: clamp(1.5625rem, 1.4844rem + 0.3906vi, 1.9531rem);
+$font-size-md: clamp(1.5625rem, 1.1844rem + 0.3906vi, 1.725rem);
 $font-size-lg: clamp(1.9531rem, 1.8555rem + 0.4883vi, 2.4414rem);
 $font-size-xl: clamp(2.4414rem, 2.3193rem + 0.6104vi, 3.0518rem);
 $font-size-xxl: clamp(3.0518rem, 2.8992rem + 0.7629vi, 3.8147rem);
+$font-size-xxxl: clamp(2.5rem, 2.5rem + 1.1921vi, 4.9605rem);
 $font-size-bg: clamp(4.7684rem, 4.53rem + 1.1921vi, 5.9605rem);
 
 $nav-font-size: clamp(0.9rem, 0.75rem + 0.3vi, 1.3rem);
@@ -80,7 +81,7 @@ $font-sizes: (
   "lg": $font-size-lg,
   "xl": $font-size-xl,
   "xxl": $font-size-xxl,
-  "big": $font-size-bg,
+  "bg": $font-size-bg,
 );
 
 @each $key, $value in $font-sizes {

@@ -1,10 +1,214 @@
 @use "design-tokens" as *;
+@use "utilities" as *;
 
 @layer theme {
-  .section-intro {
+  section {
     font-family: $text-font;
     font-size: $font-size-default;
     font-weight: $font-weight-400;
     background-color: $primary-color-surface-1;
+    padding-block-start: $spacer-xl;
+  }
+  .page-template {
+    &:before {
+      display: none;
+    }
+  }
+
+  .page-title {
+    margin-block-end: 0;
+    color: $default-color;
+    filter: drop-shadow(4px 4px 1px $gradient-3);
+  }
+
+  .resume-intro {
+    padding: $spacer-lg;
+
+    h2 {
+      text-align: center;
+      font-size: $font-size-xxl;
+      font-weight: 600;
+      margin-block-end: $spacer-lg;
+    }
+    ul {
+      @media (width <= $breakpoint-lg) {
+        padding-block: 0;
+        margin-block: 0;
+      }
+      li {
+        line-height: 1.4;
+      }
+      span:first-child {
+        color: $gradient-3;
+      }
+    }
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    padding-inline: 5em;
+    margin-block-end: $spacer-xl;
+    ul {
+      margin-bottom: 0;
+      padding-block: $spacer-sm;
+      list-style: none;
+      text-align: center;
+    }
+    .card {
+      background-color: $primary-color-surface-1;
+      padding: $spacer-sm;
+      box-shadow: 0 0 5px 0 $primary-color;
+      color: $default-color;
+      border-radius: $border-radius-rounded;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-bottom: 5px solid $secondary-color;
+      h2 {
+        font-size: $font-size-lg;
+        font-weight: 600;
+        margin-block-end: $spacer-sm;
+        color: $gradient-3;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85px;
+        padding-inline: $spacer-sm;
+      }
+      h3,
+      .h3 {
+        font-family: $heading-font;
+        font-size: $font-size-sm;
+        font-weight: 600;
+        margin-block-end: $spacer-sm;
+        color: $secondary-color;
+        text-transform: uppercase;
+      }
+      .divider {
+        width: 60px;
+        height: 3px;
+        background-color: $primary-color-surface-3;
+        margin-block-end: $spacer-sm;
+        margin-inline: auto;
+        border-radius: $border-radius-pill;
+      }
+
+      .p-container {
+        padding-inline: 10px;
+        padding-block: 25px;
+        margin-block-end: 15px;
+        p {
+          margin-block-end: 15px;
+        }
+      }
+    }
+  }
+
+  .letter {
+    padding-inline: $spacer-lg;
+    background-color: $primary-color-surface-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      text-align: center;
+      font-size: $font-size-xxl;
+      font-weight: 600;
+      margin-block-end: $spacer-lg;
+    }
+    .card {
+      padding: $spacer-xl;
+      box-shadow: 0 0 10px 0 $primary-color;
+      color: $default-color;
+      border-radius: $border-radius-rounded;
+      p {
+        margin-block-end: $spacer-xl;
+      }
+    }
+  }
+
+  .resume-experience {
+    padding-inline: $spacer-lg;
+    background-color: $primary-color-surface-1;
+    display: flex;
+
+    h2 {
+      text-align: center;
+      font-size: calc($font-size-bg * 1.75);
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      margin-block-end: $spacer-xl;
+      text-align: end;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: $font-size-xl;
+      width: fit-content;
+      line-height: 1;
+      span {
+        display: inline-block;
+      }
+    }
+    img {
+      aspect-ratio: unset;
+      max-width: 200px;
+    }
+    ul {
+      max-width: 90ch;
+    }
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  .resume-portfolio {
+    padding-inline: 50px;
+  }
+
+  .projet {
+    a {
+      text-decoration: none;
+      color: $default-color;
+      &:hover {
+        color: $gradient-3;
+      }
+    }
+    h3 {
+      font-size: $font-size-xxxl;
+      font-family: $heading-font;
+      text-transform: uppercase;
+      font-weight: 600;
+      span {
+        vertical-align: middle;
+      }
+    }
+    margin-bottom: $spacer-xl;
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $primary-color-surface-3;
+      margin-block-end: $spacer-xl;
+    }
+
+    .card-color {
+      color: $primary-color;
+    }
+  }
+
+  .projet:last-child {
+    &:after {
+      display: none;
+    }
+  }
+
+  #main-page_resume {
+    a {
+      text-underline-offset: 0.2rem;
+    }
   }
 }

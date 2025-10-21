@@ -34,9 +34,9 @@
   }
   // to match details dropdown
   .dropdown-menu {
+    //padding-block: $spacer-sm;
     transition: 0;
     border: $border-size-thick solid $primary-color;
-    padding-block: $spacer-sm;
     background-color: $background-color;
   }
 }
@@ -124,13 +124,13 @@
   }
   .dropdown-menu {
     //position absolute
+    //padding-block: $spacer-sm;
     position: absolute;
     z-index: 10;
     top: 100%;
     left: 0;
     opacity: 0;
     pointer-events: none;
-    padding-block: $spacer-sm;
     height: fit-content;
   }
 
@@ -153,7 +153,7 @@
 
 @mixin dropdown-nav {
   &.dropdown {
-    position: initial;
+    //position: initial;
     .dropdown-link {
       grid-template-columns: 16px auto;
       gap: $spacer-xs;
@@ -170,6 +170,7 @@
     .dropdown-menu {
       border: none;
       background-color: $primary-color-surface-1;
+      border-radius: $border-radius-md;
     }
     @media (width <= $breakpoint-md) {
       .dropdown-link {

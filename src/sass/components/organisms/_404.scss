@@ -1,0 +1,18 @@
+@use "../../design-tokens" as *;
+@use "../../utilities/container-wrapper" as *;
+@use "../molecules/card" as *;
+@use "../atoms" as *;
+#main-404 {
+  h1 {
+    @include text-heading-1;
+    text-align: center;
+    margin-bottom: $spacer-md;
+  }
+  .card {
+    @include card_border;
+    width: 100%;
+    max-width: max(50vi, 100%);
+    margin-inline: auto;
+    min-height: 50vh;
+  }
+}

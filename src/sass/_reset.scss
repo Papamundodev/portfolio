@@ -1,3 +1,7 @@
+@use "design-tokens" as *;
+@use "components/atoms" as *;
+@use "utilities" as *;
+
 @layer reset {
   @view-transition {
     navigation: auto;
@@ -75,5 +79,32 @@
 
   .ul-reset {
     list-style: none;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  body {
+    h1 {
+      @include text-heading-1;
+    }
+    h2 {
+      @include text-heading-2;
+    }
+    h3 {
+      @include text-heading-3;
+    }
+    p {
+      @include text-paragraph-1;
+      max-width: 75ch;
+    }
+    a:not(.nav-link) {
+      @include text-link-2;
+    }
+    ul:not(.ul-reset),
+    ol {
+      @include list;
+    }
   }
 }

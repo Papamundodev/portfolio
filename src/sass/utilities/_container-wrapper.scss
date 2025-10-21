@@ -77,7 +77,6 @@ $border-padding-inline: calc(
 }
 
 .container {
-  max-width: 1200px;
   margin-inline: auto;
   @include container;
 }

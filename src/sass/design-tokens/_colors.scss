@@ -73,9 +73,9 @@
   --link-color: var(--primary-color);
   --link-hover-color: var(--secondary-color);
   --link-active-color: var(--tertiary-color);
-  --gradient-1: hsl(288, 90%, 45%);
-  --gradient-2: hsl(213, 90%, 45%);
-  --gradient-3: hsl(319, 90%, 45%);
+  --gradient-1: #b10bda; // #b10bda
+  --gradient-2: #0b68da; // #0b68da
+  --gradient-3: #da0b99; // #da0b99
   --conic-gradient-color: conic-gradient(
     from var(--angle),
     var(--gradient-1),
@@ -88,6 +88,9 @@
     var(--gradient-2),
     var(--gradient-3)
   );
+
+  /* accent colors */
+  --accent-color: var(--primary-color);
 }
 
 .dark-theme {
@@ -159,6 +162,9 @@
   --gradient-1: hsl(288, 90%, 52%);
   --gradient-2: hsl(213, 90%, 52%);
   --gradient-3: hsl(319, 90%, 52%);
+
+  /* accent colors */
+  --accent-color: var(--primary-color);
 }
 
 $black-color: var(--black-color);
