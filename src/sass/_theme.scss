@@ -59,13 +59,19 @@
     .card {
       background-color: $primary-color-surface-1;
       padding: $spacer-sm;
-      box-shadow: 0 0 5px 0 $primary-color;
       color: $default-color;
-      border-radius: $border-radius-rounded;
       display: flex;
       flex-direction: column;
       height: 100%;
-      border-bottom: 5px solid $secondary-color;
+      &:after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $primary-color;
+        margin-block-start: auto;
+        margin-inline: auto;
+      }
       h2 {
         font-size: $font-size-lg;
         font-weight: 600;
@@ -89,8 +95,8 @@
       }
       .divider {
         width: 60px;
-        height: 3px;
-        background-color: $primary-color-surface-3;
+        height: 2px;
+        background-color: $primary-color;
         margin-block-end: $spacer-sm;
         margin-inline: auto;
         border-radius: $border-radius-pill;
